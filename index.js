@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', routes);
 
-// Conexión a MongoDB
+// Conection to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/socialNetworkDB');
 mongoose.set('debug', true);
 

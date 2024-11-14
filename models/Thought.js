@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-// Define el esquema de Reacción
+// Reaction Schema
 const reactionSchema = new Schema({
   reactionBody: {
     type: String,
@@ -14,7 +14,7 @@ const reactionSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-    // Opcional: Formateo de fecha
+    // timestamps formating
     get: (timestamp) => new Date(timestamp).toLocaleDateString(),
   },
 },
@@ -25,7 +25,7 @@ const reactionSchema = new Schema({
   id: false,
 });
 
-// Define el esquema de Pensamiento
+// Though Schema
 const thoughtSchema = new Schema({
   thoughtText: {
     type: String,
@@ -52,7 +52,7 @@ const thoughtSchema = new Schema({
   id: false,
 });
 
-// Virtual para contar reacciones
+
 thoughtSchema.virtual('reactionCount').get(function () {
   return this.reactions.length;
 });

@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-// Define el esquema de Usuario
+// User Schema
 const userSchema = new Schema({
   username: {
     type: String,
@@ -34,7 +34,7 @@ const userSchema = new Schema({
   id: false,
 });
 
-// Virtual para contar los amigos
+//
 userSchema.virtual('friendCount').get(function () {
   return this.friends.length;
 });
