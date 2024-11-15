@@ -52,16 +52,8 @@ You can test the API using **Insomnia** or any similar HTTP client. Below are ex
 ## Walkthrough Video
 [This is the link to the video](https://drive.google.com/file/d/1Z8PRcarIeZedeqZkCYt5Aorn9lInmCr_/view)
 
-![GIF of the demonstration](./Assets/SocialMediaAPI.gif)
+![GIF of the demonstration](./assets/SocialMediaAPI.gif)
 
-
-## Contribution
-If you want to contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Open a Pull Request.
 
 ## License
 This project is licensed under the MIT License.
